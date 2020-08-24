@@ -10,9 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var textField1: UITextField!
-    @IBOutlet var textFiled2: UITextField!
-    @IBOutlet var resultLabel: UILabel!
+    //private追加
+    @IBOutlet private var textField1: UITextField!
+    @IBOutlet private var textFiled2: UITextField!
+    @IBOutlet private var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

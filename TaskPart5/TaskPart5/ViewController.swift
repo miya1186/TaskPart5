@@ -26,11 +26,16 @@ class ViewController: UIViewController {
         let num1 = Float(textField1.text!) ?? 0
         let num2 = Float(textFiled2.text!) ?? 0
         
+        //textField1が空だったときの処理を追加
         if num2 == 0{
-            alert(message: "割る数には0を入力していでください")
-        }else{
+           alert(message: "割る数には0を入力しないでください")
+        }else if textField1.text == ""{
+            return
+        }
+        else{
             resultLabel.text = String(num1 / num2)
         }
+     
     }
     
     func alert(message:String){
